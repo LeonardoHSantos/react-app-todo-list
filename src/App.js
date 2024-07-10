@@ -1,23 +1,24 @@
-import styled from "styled-components";
-import Header from "./components/Header";
-
-const AppContainer = styled.div`
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  height: 100vh;
-  max-width: 100%;
-  overflow-x: hidden;
-  background-image: linear-gradient(145deg, #d1e5ff 10%, #ffffff 78%);
-`;
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
   return (
-    <AppContainer>
-      <Header />
-        <AppContainer />
-      <Header />
-    </AppContainer>
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
   );
 }
 
